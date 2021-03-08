@@ -318,3 +318,79 @@ a:hover {
 }
 
 /* Articles form end */
+
+/* Articles styles end */
+
+/* Footer start */
+
+.footer {
+  background: url('../assets/img/footer-bg.jpg') no-repeat center 0; 
+  padding: 150px 0 146px 0;
+}
+
+.footer__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.footer__wrapper > .header__logo {
+  margin-right: 138px;
+}
+
+.footer__nav {
+  margin-right: 123px;
+}
+
+.footer__list,
+.socials__list {
+  display: flex;
+}
+
+.footer__item {
+  margin-right: 88px;
+}
+
+.footer__item:last-child {
+  margin-right: 0;
+}
+
+.footer__link {
+  text-decoration: none;
+  font-size: 23px;
+  line-height: 60px;
+}
+
+.social__item {
+  display: flex;
+  margin-right: 27px;
+}
+
+.social__item:last-child {
+  margin-right: 0;
+}
+
+.social__link {
+  display: inline-block;
+  font-size: 0;
+  line-height: 0;
+  height: 40px;
+  width: 40px;
+}
+
+.facebook {
+  background: url(../assets/img/svg/facebook.svg) no-repeat;
+}
+
+.instagram {
+  background: url(../assets/img/svg/instagram.svg) no-repeat;
+}
+
+.pinterest {
+  background: url(../assets/img/svg/pinterest.svg) no-repeat;
+}
+
+.telegram {
+  background: url(../assets/img/svg/telegram.svg) no-repeat;
+}
+
+/* Footer end */
