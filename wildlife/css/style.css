@@ -147,3 +147,34 @@ a:hover {
 }
 
 /* Header styles end */
+
+/* Intro styles start */
+
+.intro {
+  background: url('../assets/img/main-bg.png') no-repeat center 0; 
+  background-size: 1440px;
+  padding-top: 199px;
+  padding-bottom: 240px;
+}
+
+.intro__title {
+  font-size: 48px;
+  line-height: 72px;
+  letter-spacing: 2px;
+  color: #CD6326;
+  margin-bottom: 51px;
+}
+
+.intro__subtitle {
+  font-size: 18px;
+  line-height: 27px;
+  width: 274px;
+  margin-bottom: 49px;
+}
+
+.intro__btn {
+  width: 160px;
+  height: 60px;
+}
+
+/* Intro styles end */
