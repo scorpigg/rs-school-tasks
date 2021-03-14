@@ -134,7 +134,7 @@ a:hover {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.header__logo-link {
+.logo__link {
   font-family: 'Roboto', 'Arial', sans-serif;
   font-size: 32px;
   line-height: 60px;
@@ -142,7 +142,7 @@ a:hover {
   text-decoration: none;
 }
 
-.header__logo-pic {
+.logo__pic {
   margin-right: 8px;
 }
 
@@ -333,7 +333,7 @@ a:hover {
   align-items: center;
 }
 
-.footer__wrapper > .header__logo {
+.footer__logo {
   margin-right: 138px;
 }
 
