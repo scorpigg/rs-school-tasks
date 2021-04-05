@@ -4,12 +4,312 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../../css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap" rel="stylesheet">
-    <title>online-zoo</title>
+    <title>Zoos Page</title>
 </head>
-<body>
+<body class="panda-live__page">
+    <header class="header">
+        <div class="wrapper header__wrapper">
+            <h1 class="visibility-hidden">Online zoo</h1>
+            <a href="../../index.html" class="logo-zoo">
+                <svg class="logo-zoo__img">
+                    <use href="../../sprite.svg#logo-zoo"></use>
+                </svg>
+            </a>
+            <div class="header__container">
+                <nav class="header__navigation">
+                    <ul class="navigation">
+                        <li><a class="navigation__link" href="../../index.html">about</a></li>
+                        <li><a class="navigation__link" href="../map.html">map</a></li>
+                        <li><a class="navigation__link navigation__link_active">zoos</a></li>
+                        <li><a class="navigation__link" href="../contact-us.html">contact us</a></li>
+                        <li><a class="navigation__link" href="https://www.figma.com/file/lnK11foY8Aoa6oOlDXovVN/Online-ZOO-Project">design</a></li>
+                    </ul>
+                </nav>
+                <div class="header__socials">
+                    <ul class="socials">
+                        <li class="socials__ico">
+                            <a href="https://www.youtube.com/">
+                                <svg class="ico ico__youtube">
+                                    <use href="../../sprite.svg#youtube"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__ico">
+                            <a href="https://www.instagram.com/">
+                                <svg class="ico ico__instagram">
+                                    <use href="../../sprite.svg#instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__ico">
+                            <a href="https://www.facebook.com/">
+                                <svg class="ico ico__facebook">
+                                    <use href="../../sprite.svg#facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
     
+    <main>
+        <aside class="side-bar">
+            <div class="side-bar__container">
+                <div class="side-bar__expand">
+                    <div class="side-bar__camera">
+                        <span class="side-bar__text">Live</span>
+                        <img src="../../assets/img/zoos-page/Camera.svg" alt="Live">
+                    </div>
+                    <a href="#!">
+                        <img src="../../assets/img/zoos-page/Arrows_right.svg" alt="expand" class="side-bar__btn">
+                    </a>
+                </div>
+                <ul class="side-bar__animals">
+                    <li class="side-bar__animal">
+                        <a title="Panda, China" class="side-bar__link side-bar__link_active">
+                            <img src="../../assets/img/zoos-page/Panda.svg" alt="Panda">
+                        </a>
+                    </li>
+                    <li class="side-bar__animal">
+                        <a title="Eagle, West End" class="side-bar__link" href="./eagles.html">
+                            <img src="../../assets/img/zoos-page/Eagle.svg" alt="Eagle">
+                        </a>
+                    </li>
+                    <li class="side-bar__animal">
+                        <a title="Gorilla, Congo" class="side-bar__link" href="./gorilla.html">
+                            <img src="../../assets/img/zoos-page/Gorilla.svg" alt="Gorilla">
+                        </a>
+                    </li>
+                    <li class="side-bar__animal">
+                        <a title="Lemur, Madagascar" class="side-bar__link" href="./lemur.html">
+                            <img src="../../assets/img/zoos-page/Lemur.svg" alt="Lemur">
+                        </a>
+                    </li>
+                </ul>
+                <div class="side-bar__more">
+                    <a href="#!">
+                        <img src="../../assets/img/zoos-page/Arrow_bottom.svg" alt="more animals">
+                    </a>
+                </div>
+            </div>
+        </aside>
+        <section class="live-cam">
+            <div class="wrapper live-cam__wrapper">
+                <div class="live-cam__container">
+                    <h2 class="live-cam__title">live panda cams</h2>
+                    <div class="live-cam__btn">
+                        <a href="#!" class="btn btn_colored">
+                            <span class="btn__text">Donate now</span>
+                            <svg class="arrow">
+                                <use href="../../sprite.svg#arrow-right"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="main-video__container">
+                    <iframe src="https://www.youtube.com/embed/9YkrojbbwiA?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="live-cam__main-video"></iframe>
+                </div>
+                <h3 class="live-cam__views">more live views</h3>
+                <div class="live-cam__slider">
+                    <div class="slider__slides">
+                        <div class="slider__slide">
+                            <div class="slider__camera">
+                                <span class="camera-text">cam 1</span>
+                                <svg class="camera-img">
+                                    <use href="../../sprite.svg#camera"></use>
+                                </svg>
+                            </div>
+                            <iframe src="https://www.youtube.com/embed/9YkrojbbwiA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="slider__video"></iframe>
+                        </div>
+                        <div class="slider__slide">
+                            <div class="slider__camera">
+                                <span class="camera-text">cam 2</span>
+                                <svg class="camera-img">
+                                    <use href="../../sprite.svg#camera"></use>
+                                </svg>
+                            </div>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/QYKSFO6yLK4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="slider__video"></iframe>
+                        </div>
+                        <div class="slider__slide">
+                            <div class="slider__camera">
+                                <span class="camera-text">cam 3</span>
+                                <svg class="camera-img">
+                                    <use href="../../sprite.svg#camera"></use>
+                                </svg>
+                            </div>
+                            <iframe src="https://www.youtube.com/embed/oSRv6znj-n8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="slider__video"></iframe>
+                        </div>
+                    </div>
+                    <div class="slider__arrows">
+                        <a href="#!" class="btn slider__btn">
+                            <svg class="arrow arrow_dark">
+                                <use href="../../sprite.svg#arrow-left"></use>
+                            </svg>
+                        </a>
+                        <a href="#!" class="btn slider__btn">
+                            <svg class="arrow arrow_dark">
+                                <use href="../../sprite.svg#arrow-right"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="quick-donation">
+            <div class="wrapper quick-donation__wrapper">
+                <div class="quick-donation__desc">
+                    <h3 class="quick-donation__title">make the Bamboo Donation!</h3>
+                    <p class="quick-donation__info">
+                        Our process for bamboo donations first starts with a site evaluation. It is important that our team sees where the bamboo is growing, then determining if the bamboo is a species that our animals are currently eating. Thank you for your interest in donating bamboo for our pandas.
+                    </p>
+                </div>
+                <div class="quick-donation__amount">
+                    <span class="quick-donation__amount-title">Quick Donate</span>
+                    <div class="quick-donation__btn">
+                        <input class="quick-donation__value" type="number" placeholder="Donation Amount" maxlength="4" max="9999">
+                        <a href="#!" class="btn btn_colored">
+                            <svg class="arrow">
+                                <use href="../../sprite.svg#arrow-right"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="did-you-know">
+            <div class="wrapper did-you-know__wrapper">
+                <div class="did-you-know__intro">
+                    <h3 class="did-you-know__title">did you know?</h3>
+                    <p class="did-you-know__info">
+                        Pandas are often seen eating in a relaxed sitting posture, with their hind legs stretched out before them. They may appear sedentary, but they are skilled tree-climbers and efficient swimmers.
+                    </p>
+                </div>
+                <div class="did-you-know__animal-info">
+                    <div class="did-you-know__container">
+                        <ul>
+                            <li class="did-you-know__name">
+                                <strong>Common name:</strong><span>Giant Panda</span>
+                            </li>
+                            <li class="did-you-know__name">
+                                <strong>Scientific name:</strong><span>Ailuropoda melanoleuca</span>
+                            </li>
+                            <li class="did-you-know__name">
+                                <strong>Type:</strong><span>Herbivore</span>
+                            </li>
+                            <li class="did-you-know__name">
+                                <strong>Size:</strong><span>4 to 5 feet</span>
+                            </li>
+                            <li class="did-you-know__name">
+                                <strong>Diet:</strong><span>Omnivore</span>
+                            </li>
+                            <li class="did-you-know__name">
+                                <strong>Habitat:</strong><span>Forests</span> 
+                            </li>
+                            <li class="did-you-know__name">
+                                <strong>Range:</strong><span>Eastern Asia</span> 
+                                <div class="did-you-know__btn">
+                                    <a href="./../map.html" class="btn btn_text btn_card">
+                                        <span class="btn__text">VIEW Map</span>
+                                        <svg class="arrow">
+                                            <use href="../../sprite.svg#arrow-right"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="did-you-know__img">
+                            <img src="../../assets/img/did-you-know/panda.jpg" alt="panda">
+                        </div>
+                    </div>
+                    <p class="did-you-know__desc">
+                        Giant pandas are very unusual animals that eat almost exclusively bamboo, which is very low in nutrients. Because of this, they have many unique adaptations for their low-energy lifestyle. Giant pandas are solitary. They have a highly developed sense of smell that males use to avoid each other and to find females for mating in the spring. After a five-month pregnancy, females give birth to a cub or two, though they cannot care for both twins. The blind infants weigh only 5 ounces at birth and cannot crawl until they reach three months of age. They are born white, and develop their much loved coloring later. Habitat loss is the primary threat to this species. Its popularity around the world has helped the giant panda become the focus of successful conservation programs.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="wrapper footer__wrapper">
+            <div class="footer__upper">
+                <ul class="footer__logos">
+                    <li>
+                        <a href="../../index.html" class="logo-zoo">
+                            <svg class="logo-zoo__img logo-zoo__img_light">
+                                <use href="../../sprite.svg#logo-zoo"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a title="Yem Digital" class="logo-yem">
+                            <svg class="logo-yem__img">
+                                <use href="../../sprite.svg#logo-yem"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a title="RS School" class="logo-rsschool">
+                            <svg class="logo-rsschool__img">
+                                <use href="../../sprite.svg#logo-rsschool"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <div class="footer__navigation">
+                    <ul class="navigation">
+                        <li><a class="navigation__link" href="../../index.html">about</a></li>
+                        <li><a class="navigation__link" href="../map.html">map</a></li>
+                        <li><a class="navigation__link" href="../zoos/panda.html">zoos</a></li>
+                        <li><a class="navigation__link" href="../contact-us.html">contact us</a></li>
+                    </ul>
+                </div>
+                <div class="footer__donation">
+                    <a href="#!" class="btn btn_long btn_light">
+                        <span class="btn__text">donate for volunteers</span>
+                        <svg class="arrow">
+                            <use href="../../sprite.svg#arrow-right"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <ul class="footer__copyright">
+                    <li>© 2021 DinaK</li>
+                    <li>© Yem Digital </li>
+                    <li>© RSSchool</li>
+                </ul>
+                <div class="footer__socials">
+                    <ul class="socials">
+                        <li class="socials__ico">
+                            <a href="https://www.youtube.com/">
+                                <svg class="ico ico__youtube">
+                                    <use href="../../sprite.svg#youtube"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__ico">
+                            <a href="https://www.instagram.com/">
+                                <svg class="ico ico__instagram">
+                                    <use href="../../sprite.svg#instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__ico">
+                            <a href="https://www.facebook.com/">
+                                <svg class="ico ico__facebook">
+                                    <use href="../../sprite.svg#facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../../js/main.js"></script>
 </body>
 </html>
