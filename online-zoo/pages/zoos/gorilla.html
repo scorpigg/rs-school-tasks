@@ -4,12 +4,313 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../../css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap" rel="stylesheet">
-    <title>online-zoo</title>
+    <title>Zoos Page</title>
 </head>
-<body>
+<body class="panda-live__page">
+    <header class="header">
+        <div class="wrapper header__wrapper">
+            <h1 class="visibility-hidden">Online zoo</h1>
+            <a href="../../index.html" class="logo-zoo">
+                <svg class="logo-zoo__img">
+                    <use href="../../sprite.svg#logo-zoo"></use>
+                </svg>
+            </a>
+            <div class="header__container">
+                <nav class="header__navigation">
+                    <ul class="navigation">
+                        <li><a class="navigation__link" href="../../index.html">about</a></li>
+                        <li><a class="navigation__link" href="../map.html">map</a></li>
+                        <li><a class="navigation__link navigation__link_active">zoos</a></li>
+                        <li><a class="navigation__link" href="../contact-us.html">contact us</a></li>
+                        <li><a class="navigation__link" href="https://www.figma.com/file/lnK11foY8Aoa6oOlDXovVN/Online-ZOO-Project">design</a></li>
+                    </ul>
+                </nav>
+                <div class="header__socials">
+                    <ul class="socials">
+                        <li class="socials__ico">
+                            <a href="https://www.youtube.com/">
+                                <svg class="ico ico__youtube">
+                                    <use href="../../sprite.svg#youtube"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__ico">
+                            <a href="https://www.instagram.com/">
+                                <svg class="ico ico__instagram">
+                                    <use href="../../sprite.svg#instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__ico">
+                            <a href="https://www.facebook.com/">
+                                <svg class="ico ico__facebook">
+                                    <use href="../../sprite.svg#facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
     
+    <main>
+        <aside class="side-bar">
+            <div class="side-bar__container">
+                <div class="side-bar__expand">
+                    <div class="side-bar__camera">
+                        <span class="side-bar__text">Live</span>
+                        <img src="../../assets/img/zoos-page/Camera.svg" alt="Live">
+                    </div>
+                    <a href="#!">
+                        <img src="../../assets/img/zoos-page/Arrows_right.svg" alt="expand" class="side-bar__btn">
+                    </a>
+                </div>
+                <ul class="side-bar__animals">
+                    <li class="side-bar__animal">
+                        <a title="Gorilla, Congo" class="side-bar__link side-bar__link_active" href="./gorilla.html">
+                            <img src="../../assets/img/zoos-page/Gorilla.svg" alt="Gorilla">
+                        </a>
+                    </li>
+                    <li class="side-bar__animal">
+                        <a title="Lemur, Madagascar" class="side-bar__link" href="./lemur.html">
+                            <img src="../../assets/img/zoos-page/Lemur.svg" alt="Lemur">
+                        </a>
+                    </li>
+                    <li class="side-bar__animal">
+                        <a title="Panda, China" class="side-bar__link" href="./panda.html">
+                            <img src="../../assets/img/zoos-page/Panda.svg" alt="Panda">
+                        </a>
+                    </li>
+                    <li class="side-bar__animal">
+                        <a title="Eagle, West End" class="side-bar__link" href="./eagles.html">
+                            <img src="../../assets/img/zoos-page/Eagle.svg" alt="Eagle">
+                        </a>
+                    </li>
+                </ul>
+                <div class="side-bar__more">
+                    <a href="#!">
+                        <img src="../../assets/img/zoos-page/Arrow_bottom.svg" alt="more animals">
+                    </a>
+                </div>
+            </div>
+        </aside>
+        <section class="live-cam">
+            <div class="wrapper live-cam__wrapper">
+                <div class="live-cam__container">
+                    <h2 class="live-cam__title">gorillas cams</h2>
+                    <div class="live-cam__btn">
+                        <a href="#!" class="btn btn_colored">
+                            <span class="btn__text">Donate now</span>
+                            <svg class="arrow">
+                                <use href="../../sprite.svg#arrow-right"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="main-video__container">
+                    <iframe src="https://www.youtube.com/embed/iDaHPi8HOGA?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="live-cam__main-video"></iframe>
+                </div>
+                <h3 class="live-cam__views">more live views</h3>
+                <div class="live-cam__slider">
+                    <div class="slider__slides">
+                        <div class="slider__slide">
+                            <div class="slider__camera">
+                                <span class="camera-text">cam 1</span>
+                                <svg class="camera-img">
+                                    <use href="../../sprite.svg#camera"></use>
+                                </svg>
+                            </div>
+                            <iframe class="slider__video" src="https://www.youtube.com/embed/rh9PwFvMS0I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="slider__slide">
+                            <div class="slider__camera">
+                                <span class="camera-text">cam 2</span>
+                                <svg class="camera-img">
+                                    <use href="../../sprite.svg#camera"></use>
+                                </svg>
+                            </div>
+                            <iframe class="slider__video" src="https://www.youtube.com/embed/wxA2Avc-oj4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="slider__slide">
+                            <div class="slider__camera">
+                                <span class="camera-text">cam 3</span>
+                                <svg class="camera-img">
+                                    <use href="../../sprite.svg#camera"></use>
+                                </svg>
+                            </div>
+                            <iframe class="slider__video" src="https://www.youtube.com/embed/wDECqJsiGqw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="slider__arrows">
+                        <a href="#!" class="btn slider__btn">
+                            <svg class="arrow arrow_dark">
+                                <use href="../../sprite.svg#arrow-left"></use>
+                            </svg>
+                        </a>
+                        <a href="#!" class="btn slider__btn">
+                            <svg class="arrow arrow_dark">
+                                <use href="../../sprite.svg#arrow-right"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="quick-donation">
+            <div class="wrapper quick-donation__wrapper">
+                <div class="quick-donation__desc">
+                    <h3 class="quick-donation__title">make a difference for the gorillas!</h3>
+                    <p class="quick-donation__info">
+                        It is our goal to ensure the conservation and restoration of the gorilla population and their habitat in Central Africa. To do this, we need your help! Bring your food charity straight to Glen and his family.
+                    </p>
+                </div>
+                <div class="quick-donation__amount">
+                    <span class="quick-donation__amount-title">Quick Donate</span>
+                    <div class="quick-donation__btn">
+                        <input class="quick-donation__value" type="number" placeholder="Donation Amount" maxlength="4" max="9999">
+                        <a href="#!" class="btn btn_colored">
+                            <svg class="arrow">
+                                <use href="../../sprite.svg#arrow-right"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="did-you-know">
+            <div class="wrapper did-you-know__wrapper">
+                <div class="did-you-know__intro">
+                    <h3 class="did-you-know__title">did you know?</h3>
+                    <p class="did-you-know__info">
+                        In addition to having distinctive fingerprints like humans do, gorillas also have unique nose prints.
+                        Gorillas are the largest of the great apes, but the western lowland gorilla is the smallest of the subspecies.
+                    </p>
+                </div>
+                <div class="did-you-know__animal-info">
+                    <div class="did-you-know__container">
+                        <ul>
+                            <li class="did-you-know__name">
+                                <strong>Common name:</strong><span>Western lowland gorillas</span>
+                            </li>
+                            <li class="did-you-know__name">
+                                <strong>Scientific name:</strong><span>Gorilla gorilla gorilla</span>
+                            </li>
+                            <li class="did-you-know__name">
+                                <strong>Type:</strong><span>Mammals</span>
+                            </li>
+                            <li class="did-you-know__name">
+                                <strong>Size:</strong><span>Standing height, four to six feet</span>
+                            </li>
+                            <li class="did-you-know__name">
+                                <strong>Diet:</strong><span>Omnivore</span>
+                            </li>
+                            <li class="did-you-know__name">
+                                <strong>Habitat:</strong><span>Rainforests</span> 
+                            </li>
+                            <li class="did-you-know__name">
+                                <strong>Range:</strong><span>Western Africa</span> 
+                                <div class="did-you-know__btn">
+                                    <a href="./../map.html" class="btn btn_text btn_card">
+                                        <span class="btn__text">VIEW Map</span>
+                                        <svg class="arrow">
+                                            <use href="../../sprite.svg#arrow-right"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="did-you-know__img">
+                            <img src="../../assets/img/did-you-know/Gorilla.jpg" alt="panda">
+                        </div>
+                    </div>
+                    <p class="did-you-know__desc">
+                        Western lowland gorillas are the smallest of the four subspecies. They live in thick tropical rainforests, where they find plenty of food for their vegetarian diet. They eat roots, shoots, fruit, wild celery, and tree bark and pulp. Gorillas can climb trees, but they’re usually found on the ground in communities—known as troops. Troops are led by one dominant, older adult male, often called a silverback because of the swath of silver hair that adorns his otherwise dark fur. Troops also include several other young males, some females, and their offspring. The leader organizes troop activities, such as eating, nesting in leaves, and moving about the group's home range. Gorillas prefer traveling on all fours, pushing themselves forward with their knuckles and soles of their feet. Female gorillas give birth to one infant after a pregnancy of nearly nine months. These infants ride on their mothers’ backs from the age of four months through the first two or three years of their lives.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="wrapper footer__wrapper">
+            <div class="footer__upper">
+                <ul class="footer__logos">
+                    <li>
+                        <a href="../../index.html" class="logo-zoo">
+                            <svg class="logo-zoo__img logo-zoo__img_light">
+                                <use href="../../sprite.svg#logo-zoo"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a title="Yem Digital" class="logo-yem">
+                            <svg class="logo-yem__img">
+                                <use href="../../sprite.svg#logo-yem"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a title="RS School" class="logo-rsschool">
+                            <svg class="logo-rsschool__img">
+                                <use href="../../sprite.svg#logo-rsschool"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <div class="footer__navigation">
+                    <ul class="navigation">
+                        <li><a class="navigation__link" href="../../index.html">about</a></li>
+                        <li><a class="navigation__link" href="../map.html">map</a></li>
+                        <li><a class="navigation__link" href="../zoos/panda.html">zoos</a></li>
+                        <li><a class="navigation__link" href="../contact-us.html">contact us</a></li>
+                    </ul>
+                </div>
+                <div class="footer__donation">
+                    <a href="#!" class="btn btn_long btn_light">
+                        <span class="btn__text">donate for volunteers</span>
+                        <svg class="arrow">
+                            <use href="../../sprite.svg#arrow-right"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <ul class="footer__copyright">
+                    <li>© 2021 DinaK</li>
+                    <li>© Yem Digital </li>
+                    <li>© RSSchool</li>
+                </ul>
+                <div class="footer__socials">
+                    <ul class="socials">
+                        <li class="socials__ico">
+                            <a href="https://www.youtube.com/">
+                                <svg class="ico ico__youtube">
+                                    <use href="../../sprite.svg#youtube"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__ico">
+                            <a href="https://www.instagram.com/">
+                                <svg class="ico ico__instagram">
+                                    <use href="../../sprite.svg#instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__ico">
+                            <a href="https://www.facebook.com/">
+                                <svg class="ico ico__facebook">
+                                    <use href="../../sprite.svg#facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../../js/main.js"></script>
 </body>
 </html>

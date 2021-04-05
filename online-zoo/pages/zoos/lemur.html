@@ -4,12 +4,312 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../../css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap" rel="stylesheet">
-    <title>online-zoo</title>
+    <title>Zoos Page</title>
 </head>
-<body>
+<body class="panda-live__page">
+    <header class="header">
+        <div class="wrapper header__wrapper">
+            <h1 class="visibility-hidden">Online zoo</h1>
+            <a href="../../index.html" class="logo-zoo">
+                <svg class="logo-zoo__img">
+                    <use href="../../sprite.svg#logo-zoo"></use>
+                </svg>
+            </a>
+            <div class="header__container">
+                <nav class="header__navigation">
+                    <ul class="navigation">
+                        <li><a class="navigation__link" href="../../index.html">about</a></li>
+                        <li><a class="navigation__link" href="../map.html">map</a></li>
+                        <li><a class="navigation__link navigation__link_active">zoos</a></li>
+                        <li><a class="navigation__link" href="../contact-us.html">contact us</a></li>
+                        <li><a class="navigation__link" href="https://www.figma.com/file/lnK11foY8Aoa6oOlDXovVN/Online-ZOO-Project">design</a></li>
+                    </ul>
+                </nav>
+                <div class="header__socials">
+                    <ul class="socials">
+                        <li class="socials__ico">
+                            <a href="https://www.youtube.com/">
+                                <svg class="ico ico__youtube">
+                                    <use href="../../sprite.svg#youtube"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__ico">
+                            <a href="https://www.instagram.com/">
+                                <svg class="ico ico__instagram">
+                                    <use href="../../sprite.svg#instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__ico">
+                            <a href="https://www.facebook.com/">
+                                <svg class="ico ico__facebook">
+                                    <use href="../../sprite.svg#facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
     
+    <main>
+        <aside class="side-bar">
+            <div class="side-bar__container">
+                <div class="side-bar__expand">
+                    <div class="side-bar__camera">
+                        <span class="side-bar__text">Live</span>
+                        <img src="../../assets/img/zoos-page/Camera.svg" alt="Live">
+                    </div>
+                    <a href="#!">
+                        <img src="../../assets/img/zoos-page/Arrows_right.svg" alt="expand" class="side-bar__btn">
+                    </a>
+                </div>
+                <ul class="side-bar__animals">
+                    <li class="side-bar__animal">
+                        <a title="Lemur, Madagascar" class="side-bar__link side-bar__link_active">
+                            <img src="../../assets/img/zoos-page/Lemur.svg" alt="Lemur">
+                        </a>
+                    </li>
+                    <li class="side-bar__animal">
+                        <a title="Panda, China" class="side-bar__link" href="./panda.html">
+                            <img src="../../assets/img/zoos-page/Panda.svg" alt="Panda">
+                        </a>
+                    </li>
+                    <li class="side-bar__animal">
+                        <a title="Eagle, West End" class="side-bar__link" href="./eagles.html">
+                            <img src="../../assets/img/zoos-page/Eagle.svg" alt="Eagle">
+                        </a>
+                    </li>
+                    <li class="side-bar__animal">
+                        <a title="Gorilla, Congo" class="side-bar__link" href="./Gorilla.html">
+                            <img src="../../assets/img/zoos-page/Gorilla.svg" alt="Gorilla">
+                        </a>
+                    </li>
+                </ul>
+                <div class="side-bar__more">
+                    <a href="#!">
+                        <img src="../../assets/img/zoos-page/Arrow_bottom.svg" alt="more animals">
+                    </a>
+                </div>
+            </div>
+        </aside>
+        <section class="live-cam">
+            <div class="wrapper live-cam__wrapper">
+                <div class="live-cam__container">
+                    <h2 class="live-cam__title">lemurs cams</h2>
+                    <div class="live-cam__btn">
+                        <a href="#!" class="btn btn_colored">
+                            <span class="btn__text">Donate now</span>
+                            <svg class="arrow">
+                                <use href="../../sprite.svg#arrow-right"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="main-video__container">
+                    <iframe src="https://www.youtube.com/embed/UjSiq53nJBo?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="live-cam__main-video"></iframe>
+                </div>
+                <h3 class="live-cam__views">more live views</h3>
+                <div class="live-cam__slider">
+                    <div class="slider__slides">
+                        <div class="slider__slide">
+                            <div class="slider__camera">
+                                <span class="camera-text">cam 1</span>
+                                <svg class="camera-img">
+                                    <use href="../../sprite.svg#camera"></use>
+                                </svg>
+                            </div>
+                            <iframe class="slider__video" src="https://www.youtube.com/embed/6eaTBoqpNEg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="slider__slide">
+                            <div class="slider__camera">
+                                <span class="camera-text">cam 2</span>
+                                <svg class="camera-img">
+                                    <use href="../../sprite.svg#camera"></use>
+                                </svg>
+                            </div>
+                            <iframe class="slider__video" src="https://www.youtube.com/embed/jcjDrE1ye-E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="slider__slide">
+                            <div class="slider__camera">
+                                <span class="camera-text">cam 3</span>
+                                <svg class="camera-img">
+                                    <use href="../../sprite.svg#camera"></use>
+                                </svg>
+                            </div>
+                            <iframe class="slider__video" src="https://www.youtube.com/embed/yYXoCHLqr4o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="slider__arrows">
+                        <a href="#!" class="btn slider__btn">
+                            <svg class="arrow arrow_dark">
+                                <use href="../../sprite.svg#arrow-left"></use>
+                            </svg>
+                        </a>
+                        <a href="#!" class="btn slider__btn">
+                            <svg class="arrow arrow_dark">
+                                <use href="../../sprite.svg#arrow-right"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="quick-donation">
+            <div class="wrapper quick-donation__wrapper">
+                <div class="quick-donation__desc">
+                    <h3 class="quick-donation__title">Provide Andy the lemur with fruits!</h3>
+                    <p class="quick-donation__info">
+                        More than 90% of lemur species are endangered and might face extinction in the nearest future. Watch the ring-tailed lemurs play and climb in this soothing setting and support them by donating for the fruits they adore.
+                    </p>
+                </div>
+                <div class="quick-donation__amount">
+                    <span class="quick-donation__amount-title">Quick Donate</span>
+                    <div class="quick-donation__btn">
+                        <input class="quick-donation__value" type="number" placeholder="Donation Amount" maxlength="4" max="9999">
+                        <a href="#!" class="btn btn_colored">
+                            <svg class="arrow">
+                                <use href="../../sprite.svg#arrow-right"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="did-you-know">
+            <div class="wrapper did-you-know__wrapper">
+                <div class="did-you-know__intro">
+                    <h3 class="did-you-know__title">did you know?</h3>
+                    <p class="did-you-know__info">
+                        A ring-tailed lemur mob will gather in open areas of the forest to sunbathe. They sit in what some call a "yoga position" with their bellies toward the sun and their arms and legs stretched out to the sides.
+                    </p>
+                </div>
+                <div class="did-you-know__animal-info">
+                    <div class="did-you-know__container">
+                        <ul>
+                            <li class="did-you-know__name">
+                                <strong>Common name:</strong><span>Ring-Tailed Lemur</span>
+                            </li>
+                            <li class="did-you-know__name">
+                                <strong>Scientific name:</strong><span>Lemur catta</span>
+                            </li>
+                            <li class="did-you-know__name">
+                                <strong>Type:</strong><span>Mammals</span>
+                            </li>
+                            <li class="did-you-know__name">
+                                <strong>Size:</strong><span>Head and body: 17.75 inches; tail: 21.75 inches</span>
+                            </li>
+                            <li class="did-you-know__name">
+                                <strong>Diet:</strong><span>Herbivore</span>
+                            </li>
+                            <li class="did-you-know__name">
+                                <strong>Habitat:</strong><span>Arid, open areas and forests</span> 
+                            </li>
+                            <li class="did-you-know__name">
+                                <strong>Range:</strong><span>Southeast Asia</span> 
+                                <div class="did-you-know__btn">
+                                    <a href="./../map.html" class="btn btn_text btn_card">
+                                        <span class="btn__text">VIEW Map</span>
+                                        <svg class="arrow">
+                                            <use href="../../sprite.svg#arrow-right"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="did-you-know__img">
+                            <img src="../../assets/img/did-you-know/Lemur.jpg" alt="panda">
+                        </div>
+                    </div>
+                    <p class="did-you-know__desc">
+                        Ring-tailed lemurs are named for the 13 alternating black and white bands that adorn their tails. Unlike most other lemurs, ringtails spend 40 percent of their time on the ground, moving quadrupedally along the forest floor. Ring-tailed lemurs live in southwestern Madagascar, in arid, open areas and forests in territories that range from 15 to 57 acres (0.06 to 0.2 square kilometers) in size. As with all lemurs, olfactory communication is important for ringtails. Ring-tailed lemurs have scent glands on their wrists and chests that they use to mark their foraging routes. Ringtails eat leaves, flowers and insects. They can also eat fruit, herbs and small vertebrates.Females usually give birth to their first baby when they are three years old, and usually once a year every year after that. All adult females participate in raising the offspring of the group. The median life expectancy for a ring-tailed lemur is about 16 years.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="wrapper footer__wrapper">
+            <div class="footer__upper">
+                <ul class="footer__logos">
+                    <li>
+                        <a href="../../index.html" class="logo-zoo">
+                            <svg class="logo-zoo__img logo-zoo__img_light">
+                                <use href="../../sprite.svg#logo-zoo"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a title="Yem Digital" class="logo-yem">
+                            <svg class="logo-yem__img">
+                                <use href="../../sprite.svg#logo-yem"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a title="RS School" class="logo-rsschool">
+                            <svg class="logo-rsschool__img">
+                                <use href="../../sprite.svg#logo-rsschool"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <div class="footer__navigation">
+                    <ul class="navigation">
+                        <li><a class="navigation__link" href="../../index.html">about</a></li>
+                        <li><a class="navigation__link" href="../map.html">map</a></li>
+                        <li><a class="navigation__link" href="../zoos/panda.html">zoos</a></li>
+                        <li><a class="navigation__link" href="../contact-us.html">contact us</a></li>
+                    </ul>
+                </div>
+                <div class="footer__donation">
+                    <a href="#!" class="btn btn_long btn_light">
+                        <span class="btn__text">donate for volunteers</span>
+                        <svg class="arrow">
+                            <use href="../../sprite.svg#arrow-right"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <ul class="footer__copyright">
+                    <li>© 2021 DinaK</li>
+                    <li>© Yem Digital </li>
+                    <li>© RSSchool</li>
+                </ul>
+                <div class="footer__socials">
+                    <ul class="socials">
+                        <li class="socials__ico">
+                            <a href="https://www.youtube.com/">
+                                <svg class="ico ico__youtube">
+                                    <use href="../../sprite.svg#youtube"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__ico">
+                            <a href="https://www.instagram.com/">
+                                <svg class="ico ico__instagram">
+                                    <use href="../../sprite.svg#instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__ico">
+                            <a href="https://www.facebook.com/">
+                                <svg class="ico ico__facebook">
+                                    <use href="../../sprite.svg#facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../../js/main.js"></script>
 </body>
 </html>
