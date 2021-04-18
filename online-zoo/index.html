@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/img/Favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap" rel="stylesheet">
@@ -19,6 +20,9 @@
                 </svg>
             </a>
             <div class="header__container">
+                <span class="hamburger">
+                    <span class="hamburger__line"></span>
+                </span>
                 <nav class="header__navigation">
                     <ul class="navigation">
                         <li><a class="navigation__link navigation__link_active">about</a></li>
@@ -31,21 +35,21 @@
                 <div class="header__socials">
                     <ul class="socials">
                         <li class="socials__ico">
-                            <a href="https://www.youtube.com/">
+                            <a target="_blank" href="https://www.youtube.com/">
                                 <svg class="ico ico__youtube">
                                     <use href="sprite.svg#youtube"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="socials__ico">
-                            <a href="https://www.instagram.com/">
+                            <a target="_blank" href="https://www.instagram.com/">
                                 <svg class="ico ico__instagram">
                                     <use href="sprite.svg#instagram"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="socials__ico">
-                            <a href="https://www.facebook.com/">
+                            <a target="_blank" href="https://www.facebook.com/">
                                 <svg class="ico ico__facebook">
                                     <use href="sprite.svg#facebook"></use>
                                 </svg>
@@ -76,7 +80,7 @@
                 <div class="block__info">
                     <h2 class="block__title">Welcome to the Online Zoo!</h2>
                     <p class="block__desc">
-                        On our website, using live webcams, fans of all ages can observe various animals. Among them, are Giant pandas, eagles, alligators, forest gorillas, African lions, and others. It is the whole natural world in real-time in front of our cameras. We hope you will enjoy watching closely and explore animals’ behavior and habitats! Note: animals are not always on view on cameras, so please check back if you don't see anything.
+                        On our website, using live webcams, fans of all ages can observe various animals. Among them, are Giant pandas, eagles, alligators, forest gorillas, African lions, and others. It is the whole natural world in real-time in front of our cameras.<span class="text-hidden"> We hope you will enjoy watching closely and explore animals’ behavior and habitats! Note: animals are not always on view on cameras, so please check back if you don't see anything.</span> 
                     </p>
                 </div>
                 <div class="block__pic">
@@ -90,7 +94,7 @@
                 <div class="block__info">
                     <h2 class="block__title">How we work </h2>
                     <p class="block__desc">
-                        Online Zoo is a nonprofit committed to inspiring awareness and preservation of nature and wild animals in our zoo and worldwide. Every day, our experts work to safeguard the health and wellness of the animals. To continue these efforts, we need your help. We're so grateful to our numerous supporters. All donations, large and small, go a long way to the conservation efforts of our pets.
+                        Online Zoo is a nonprofit committed to inspiring awareness and preservation of nature and wild animals in our zoo and worldwide.<span class="text-hidden"> Every day, our experts work to safeguard the health and wellness of the animals.</span> To continue these efforts, we need your help. We're so grateful to our <span class="text-hidden">numerous</span> supporters. All donations, large and small, go a long way to the conservation efforts of our pets.
                     </p>
                 </div>
             </div>
@@ -136,7 +140,7 @@
         </div>
         <div class="our-pets__container">
             <div class="our-pets__cards">
-                <div class="our-pets__card pet">
+                <div class="our-pets__card pet show-pet">
                     <div class="our-pets__img-contaner pet__panda"></div>
                     <div class="pet__box">
                         <h4 class="pet__title">Giant Panda</h4>
@@ -221,7 +225,7 @@
                     <span class="pet__name">Sam & Lora</span>
                     <a class="pet__link" href="./pages/zoos/eagles.html"></a>
                 </div>
-                <div class="our-pets__card pet">
+                <div class="our-pets__card pet show-pet">
                     <div class="our-pets__img-contaner pet__koala"></div>
                     <div class="pet__box">
                         <h4 class="pet__title">Australian Koala</h4>
@@ -238,7 +242,7 @@
                     <span class="pet__name">Liz</span>
                     <a class="pet__link" href="#!"></a>
                 </div>
-                <div class="our-pets__card pet">
+                <div class="our-pets__card pet show-pet">
                     <div class="our-pets__img-contaner pet__lion"></div>
                     <div class="pet__box">
                         <h4 class="pet__title">African Lion</h4>
@@ -255,7 +259,7 @@
                     <span class="pet__name">Snake</span>
                     <a class="pet__link" href="#!"></a>
                 </div>
-                <div class="our-pets__card pet">
+                <div class="our-pets__card pet show-pet">
                     <div class="our-pets__img-contaner pet__tiger"></div>
                     <div class="pet__box">
                         <h4 class="pet__title">Sumatran Tiger</h4>
@@ -296,7 +300,7 @@
                             <img src="./assets/img/play-and-feed/heart.png" alt="heart" class="donation__img">
                             <h4 class="donation__title">Your donation has an impact</h4>
                             <p class="donation__desc">
-                                Providing our animals with high-quality nutritious diets is just one element of animal care at our Zoo. We do all the best so that our animals can eat food similar to what they might find in their natural habitats while making sure they get the right mix of nutrients, proteins, and vitamins to be happy and healthy. Please help us provide nutritious food for our animals by donating. The generosity of people like you can help us make sure that our animals enjoy good food that keeps them in great condition.
+                                Providing our animals with high-quality nutritious diets is just one element of animal care at our Zoo. We do all the best so that our animals can eat food similar to what they might find in their natural habitats while making sure they get the right mix of nutrients, proteins, and vitamins to be happy and healthy. Please help us provide nutritious food for our animals by donating. <span class="text-hidden"> The generosity of people like you can help us make sure that our animals enjoy good food that keeps them in great condition.</span>
                             </p>
                         </div>
                     </div>
@@ -309,7 +313,7 @@
                             <img src="./assets/img/play-and-feed/money.png" alt="money" class="donation__img">
                             <h4 class="donation__title">Make a donation</h4>
                             <p class="donation__desc">
-                                You can donate through your credit card without any fees. It is easy and safe. We do not keep donors' personal information on an online network. Choose an amount to give and the pet's name if needed. One of the most effective ways you can give is by making regular donations.
+                                You can donate through your credit card without any fees. It is easy and safe. We do not keep donors' personal information on an online network. Choose an amount to give and the pet's name if needed. <span class="text-hidden">One of the most effective ways you can give is by making regular donations.</span>
                             </p>
                         </div>
                     </div>
@@ -382,6 +386,12 @@
                             <span class="feedback__person">Tomas Ray</span>
                         </li>
                     </ul>
+                    <div class="card__controls card__controls">
+                        <span class="card__dot card__dot_light card__dot_active-light"></span>
+                        <span class="card__dot card__dot_light"></span>
+                        <span class="card__dot card__dot_light"></span>
+                        <span class="card__dot card__dot_light"></span>
+                    </div>
                     <div class="feedbacks__constrols">
                         <a href="#!" class="btn btn_light btn_small">
                             <svg class="arrow">
@@ -475,9 +485,15 @@
                     <a class="feed__link" href="./pages/zoos/eagles.html"></a>
                 </div>
             </div>
+            <div class="card__controls">
+                <span class="card__dot card__dot_active"></span>
+                <span class="card__dot"></span>
+                <span class="card__dot"></span>
+                <span class="card__dot"></span>
+            </div>
             <div class="feed__favourite-btn">
                 <a href="./pages/map.html" class="btn btn_long btn_dark">
-                    <span class="btn__text">choose your favourite</span>
+                    <span class="btn__text">Choose your favourite</span>
                     <svg class="arrow">
                         <use href="sprite.svg#arrow-right"></use>
                     </svg>
@@ -522,7 +538,7 @@
                 </div>
                 <div class="footer__donation">
                     <a href="#!" class="btn btn_long btn_light">
-                        <span class="btn__text">donate for volunteers</span>
+                        <span class="btn__text">Donate for volunteers</span>
                         <svg class="arrow">
                             <use href="sprite.svg#arrow-right"></use>
                         </svg>
@@ -538,21 +554,21 @@
                 <div class="footer__socials">
                     <ul class="socials">
                         <li class="socials__ico">
-                            <a href="https://www.youtube.com/">
+                            <a target="_blank" href="https://www.youtube.com/">
                                 <svg class="ico ico__youtube">
                                     <use href="sprite.svg#youtube"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="socials__ico">
-                            <a href="https://www.instagram.com/">
+                            <a target="_blank" href="https://www.instagram.com/">
                                 <svg class="ico ico__instagram">
                                     <use href="sprite.svg#instagram"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="socials__ico">
-                            <a href="https://www.facebook.com/">
+                            <a target="_blank" href="https://www.facebook.com/">
                                 <svg class="ico ico__facebook">
                                     <use href="sprite.svg#facebook"></use>
                                 </svg>
