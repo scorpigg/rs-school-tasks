@@ -62,55 +62,91 @@
     </header>
     
     <main>
-        <aside class="side-bar">
-            <div class="side-bar__container">
-                <div class="side-bar__expand">
-                    <div class="side-bar__camera">
-                        <span class="side-bar__text">Live</span>
-                        <img src="../../assets/img/zoos-page/Camera.svg" alt="Live">
+        <section class="live-cam">
+            <aside class="side-bar">
+                <div class="side-bar__container">
+                    <div class="side-bar__open">
+                        <div class="side-bar__camera">
+                            <span class="side-bar__text">Live</span>
+                            <img src="../../assets/img/zoos-page/Camera.svg" alt="Live">
+                        </div>
+                        <a href="#!">
+                            <img src="../../assets/img/zoos-page/Arrows_right.svg" alt="expand" class="side-bar__btn">
+                        </a>
                     </div>
-                    <a href="#!">
-                        <img src="../../assets/img/zoos-page/Arrows_right.svg" alt="expand" class="side-bar__btn">
-                    </a>
-                </div>
-                <ul class="side-bar__animals">
-                    <li class="side-bar__animal">
-                        <a title="Gorilla, Congo" class="side-bar__link side-bar__link_active" href="./gorilla.html">
-                            <svg class="side-bar__img">
-                                <use href="../../sprite.svg#side-bar-gorilla"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="side-bar__animal">
-                        <a title="Lemur, Madagascar" class="side-bar__link" href="./lemur.html">
-                            <svg class="side-bar__img">
-                                <use href="../../sprite.svg#side-bar-lemur"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="side-bar__animal">
-                        <a title="Panda, China" class="side-bar__link" href="./panda.html">
-                            <svg class="side-bar__img">
-                                <use href="../../sprite.svg#side-bar-panda"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="side-bar__animal">
-                        <a title="Eagle, West End" class="side-bar__link" href="./eagles.html">
-                            <svg class="side-bar__img">
-                                <use href="../../sprite.svg#side-bar-eagle"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-                <div class="side-bar__more">
-                    <a href="#!">
+                    <div class="side-bar_wrapper">
+                        <ul class="side-bar__animals">
+                            <li class="side-bar__animal">
+                                <a title="Gorilla, Congo" class="side-bar__link side-bar__link_active">
+                                    <svg class="side-bar__img">
+                                        <use href="../../sprite.svg#side-bar-gorilla"></use>
+                                    </svg>
+                                    <span class="side-bar__desc">Livestream from Gorilla Forest Corridor habitat cam</span>
+                                </a>
+                            </li>
+                            <li class="side-bar__animal">
+                                <a title="Lemur, Madagascar" class="side-bar__link" href="./lemur.html">
+                                    <svg class="side-bar__img">
+                                        <use href="../../sprite.svg#side-bar-lemur"></use>
+                                    </svg>
+                                    <span class="side-bar__desc">The ring-tailed lemurs play in Madagascar, Lemuria Land</span>
+                                </a>
+                            </li>
+                            <li class="side-bar__animal">
+                                <a title="Alligator, China" class="side-bar__link" href="#!">
+                                    <svg class="side-bar__img">
+                                        <use href="../../sprite.svg#side-bar-alligator"></use>
+                                    </svg>
+                                    <span class="side-bar__desc">Lorem ipsum, dolor sit amet consectetur adipisicin</span>
+                                </a>
+                            </li>
+                            <li class="side-bar__animal">
+                                <a title="Koala, Australia" class="side-bar__link" href="#!">
+                                    <svg class="side-bar__img">
+                                        <use href="../../sprite.svg#side-bar-koala"></use>
+                                    </svg>
+                                    <span class="side-bar__desc">Lorem ipsum, dolor sit amet consectetur adipisicin</span>
+                                </a>
+                            </li>
+                            <li class="side-bar__animal">
+                                <a title="Lion, Africa" class="side-bar__link" href="#!">
+                                    <svg class="side-bar__img">
+                                        <use href="../../sprite.svg#side-bar-lion"></use>
+                                    </svg>
+                                    <span class="side-bar__desc">Lorem ipsum, dolor sit amet consectetur adipisicin</span>
+                                </a>
+                            </li>
+                            <li class="side-bar__animal">
+                                <a title="Tiger, Sumatran" class="side-bar__link" href="#!">
+                                    <svg class="side-bar__img">
+                                        <use href="../../sprite.svg#side-bar-tiger"></use>
+                                    </svg>
+                                    <span class="side-bar__desc">Lorem ipsum, dolor sit amet consectetur adipisicin</span>
+                                </a>
+                            </li>
+                            <li class="side-bar__animal">
+                                <a href="./panda.html" title="Panda, China" class="side-bar__link">
+                                    <svg class="side-bar__img">
+                                        <use href="../../sprite.svg#side-bar-panda"></use>
+                                    </svg>
+                                    <span class="side-bar__desc">Watch live from China's  Panda Center</span>
+                                </a>
+                            </li>
+                            <li class="side-bar__animal">
+                                <a href="./eagles.html" title="Eagle, West End" class="side-bar__link">
+                                    <svg class="side-bar__img">
+                                        <use href="../../sprite.svg#side-bar-eagle"></use>
+                                    </svg>
+                                    <span class="side-bar__desc">Watch The Bald Eagles Nest from West End cam</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#!" class="side-bar__more">
                         <img src="../../assets/img/zoos-page/Arrow_bottom.svg" alt="more animals">
                     </a>
                 </div>
-            </div>
-        </aside>
-        <section class="live-cam">
+            </aside>
             <div class="wrapper live-cam__wrapper">
                 <div class="live-cam__container">
                     <h2 class="live-cam__title">gorillas cams</h2>
@@ -124,46 +160,93 @@
                     </div>
                 </div>
                 <div class="main-video__container">
-                    <iframe src="https://www.youtube.com/embed/iDaHPi8HOGA?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="live-cam__main-video"></iframe>
+                    <iframe src="https://www.youtube.com/embed/iDaHPi8HOGA?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="slider__video"></iframe>
                 </div>
                 <h3 class="live-cam__views">More live views</h3>
                 <div class="live-cam__slider">
-                    <div class="slider__slides">
-                        <div class="slider__slide">
-                            <div class="slider__camera">
-                                <span class="camera-text">cam 1</span>
-                                <svg class="camera-img">
-                                    <use href="../../sprite.svg#camera"></use>
-                                </svg>
+                    <div class="slider__slides-container">
+                        <div class="slider__slides">
+                            <div class="slider__slide slide-chosen">
+                                <div class="slider__camera">
+                                    <span class="camera-text">cam 1</span>
+                                    <svg class="camera-img">
+                                        <use href="../../sprite.svg#camera"></use>
+                                    </svg>
+                                </div>
+                                <iframe class="slider__video" src="https://www.youtube.com/embed/rh9PwFvMS0I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
-                            <iframe class="slider__video" src="https://www.youtube.com/embed/rh9PwFvMS0I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <div class="slider__slide">
-                            <div class="slider__camera">
-                                <span class="camera-text">cam 2</span>
-                                <svg class="camera-img">
-                                    <use href="../../sprite.svg#camera"></use>
-                                </svg>
+                            <div class="slider__slide">
+                                <div class="slider__camera">
+                                    <span class="camera-text">cam 2</span>
+                                    <svg class="camera-img">
+                                        <use href="../../sprite.svg#camera"></use>
+                                    </svg>
+                                </div>
+                                <iframe class="slider__video" src="https://www.youtube.com/embed/wxA2Avc-oj4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
-                            <iframe class="slider__video" src="https://www.youtube.com/embed/wxA2Avc-oj4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <div class="slider__slide">
-                            <div class="slider__camera">
-                                <span class="camera-text">cam 3</span>
-                                <svg class="camera-img">
-                                    <use href="../../sprite.svg#camera"></use>
-                                </svg>
+                            <div class="slider__slide">
+                                <div class="slider__camera">
+                                    <span class="camera-text">cam 3</span>
+                                    <svg class="camera-img">
+                                        <use href="../../sprite.svg#camera"></use>
+                                    </svg>
+                                </div>
+                                <iframe class="slider__video" src="https://www.youtube.com/embed/wDECqJsiGqw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
-                            <iframe class="slider__video" src="https://www.youtube.com/embed/wDECqJsiGqw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div class="slider__slide">
+                                <div class="slider__camera">
+                                    <span class="camera-text">cam 4</span>
+                                    <svg class="camera-img">
+                                        <use href="../../sprite.svg#camera"></use>
+                                    </svg>
+                                </div>
+                                <iframe class="slider__video" src="https://www.youtube.com/embed/rh9PwFvMS0I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <div class="slider__slide">
+                                <div class="slider__camera">
+                                    <span class="camera-text">cam 5</span>
+                                    <svg class="camera-img">
+                                        <use href="../../sprite.svg#camera"></use>
+                                    </svg>
+                                </div>
+                                <iframe class="slider__video" src="https://www.youtube.com/embed/wxA2Avc-oj4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <div class="slider__slide">
+                                <div class="slider__camera">
+                                    <span class="camera-text">cam 6</span>
+                                    <svg class="camera-img">
+                                        <use href="../../sprite.svg#camera"></use>
+                                    </svg>
+                                </div>
+                                <iframe class="slider__video" src="https://www.youtube.com/embed/wDECqJsiGqw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <div class="slider__slide">
+                                <div class="slider__camera">
+                                    <span class="camera-text">cam 7</span>
+                                    <svg class="camera-img">
+                                        <use href="../../sprite.svg#camera"></use>
+                                    </svg>
+                                </div>
+                                <iframe class="slider__video" src="https://www.youtube.com/embed/rh9PwFvMS0I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <div class="slider__slide">
+                                <div class="slider__camera">
+                                    <span class="camera-text">cam 8</span>
+                                    <svg class="camera-img">
+                                        <use href="../../sprite.svg#camera"></use>
+                                    </svg>
+                                </div>
+                                <iframe class="slider__video" src="https://www.youtube.com/embed/wxA2Avc-oj4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
                         </div>
                     </div>
                     <div class="slider__arrows">
-                        <a href="#!" class="btn slider__btn">
+                        <a href="#!" class="btn slider__btn zoos__prev">
                             <svg class="arrow arrow_dark">
                                 <use href="../../sprite.svg#arrow-left"></use>
                             </svg>
                         </a>
-                        <a href="#!" class="btn slider__btn">
+                        <a href="#!" class="btn slider__btn zoos__next">
                             <svg class="arrow arrow_dark">
                                 <use href="../../sprite.svg#arrow-right"></use>
                             </svg>
@@ -183,7 +266,7 @@
                 <div class="quick-donation__amount">
                     <span class="quick-donation__amount-title">Quick Donate</span>
                     <div class="quick-donation__btn">
-                        <input class="quick-donation__value" type="number" placeholder="Donation Amount" maxlength="4" max="9999">
+                        <input class="quick-donation__value donation-amount" type="number" placeholder="Donation Amount" maxlength="4" max="9999">
                         <a href="#!" class="btn btn_colored">
                             <svg class="arrow">
                                 <use href="../../sprite.svg#arrow-right"></use>
@@ -323,6 +406,6 @@
             </div>
         </div>
     </footer>
-    <script src="../../js/main.js"></script>
+    <script src="../../js/zoos.js"></script>
 </body>
 </html>
