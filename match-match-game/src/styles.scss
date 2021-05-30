@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  position: relative;
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.cards-field-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.visibility-hidden {
+  position: absolute;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+}
+
+.content-container {
+  height: 100%;
+  width: 1000px;
+  background: rgba(0, 0, 0, 0.05);
+  padding: 50px 100px 50px 50px;
+}
+
+.hidden {
+  display: none;
+}
+
+.player {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba($color: #000000, $alpha: .3);
+  padding: 10px;
+}
+
+.player__name {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.player__email {
+  font-size: 1.6rem;
+  color: rgba($color: #000000, $alpha: .7);
+}
+
+.player__score {
+  font-size: 2rem;
+  font-weight: 500;
+}

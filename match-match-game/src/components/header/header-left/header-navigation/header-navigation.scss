@@ -1,0 +1,26 @@
+.header__navigation {
+  height: 100%;
+}
+
+.navigation {
+  display: flex;
+}
+
+.navigation__link {
+  display: block;
+  padding: 30px 15px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+  letter-spacing: 0.1rem;
+  font-weight: 500;
+
+  &:hover {
+    background-color: #358cd3;
+  }
+
+  &_active {
+    background-color: #358cd3;
+  }
+}

@@ -1,0 +1,53 @@
+.registration-container {
+  margin-bottom: 30px;
+}
+
+.field-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+
+  label {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+  }
+
+  input {
+    width: 300px;
+    padding: 20px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .correct {
+    border: 2px solid #0fe255;
+  }
+  
+  .incorrect {
+    border: 2px solid #ff0000;
+  }
+}
+
+.errors {
+  position: absolute;
+  top: 90px;
+  background-color: lightcoral;
+  color: white;
+  width: 100%;
+  padding: 2px;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  z-index: 2;
+}
+
+.error {
+  display: block;
+}

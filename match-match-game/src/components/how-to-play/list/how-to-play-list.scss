@@ -1,0 +1,46 @@
+.how-to-play__item {
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: space-between;
+
+  & div:first-child {
+    height: 200px;
+    width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.how-to-play__desc {
+  display: flex;
+  align-items: baseline;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.how-to-play__num {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 40px;
+  min-width: 40px;
+  background-color: #2196F3;
+  font-size: 2.4rem;
+  line-height: 3rem;
+  color: #fff;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.regisration-img,
+.game-img {
+  background-image: url('../../../assets/reg-image.jpg');
+  background-size: cover;
+  width: 277px;
+  box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+.game-img {
+  background-image: url('../../../assets/game-image.jpg');
+}
