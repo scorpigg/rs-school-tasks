@@ -9,12 +9,6 @@ export class GameDificulity extends Render {
 
   private options: { value: string, name: string, selected: string, disabled: string }[] = [
     {
-      value: '',
-      name: 'Select type',
-      selected: 'selected',
-      disabled: 'disabled',
-    },
-    {
       value: '4',
       name: '4x4',
       selected: '',

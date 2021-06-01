@@ -71,7 +71,7 @@ export class App {
   async start(): Promise<void> {
     const res = await fetch('./images.json');
     const categorites: ImageCategoryModel[] = await res.json();
-    const cat = categorites[this.value];
+    const cat = categorites[this.value] || categorites[0];
     const images = cat.images.map((name) => `${cat.category}/${name}`);
     this.game.newGame(images);
     changeDisplay('.stop-btn', '.start-btn');

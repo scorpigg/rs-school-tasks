@@ -9,12 +9,6 @@ export class GameCards extends Render {
 
   private options: { value: string, name: string, selected: string, disabled: string }[] = [
     {
-      value: '',
-      name: 'Select game cards type',
-      selected: 'selected',
-      disabled: 'disabled',
-    },
-    {
       value: '0',
       name: 'Animals',
       selected: '',
