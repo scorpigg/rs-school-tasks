@@ -15,7 +15,7 @@ export class CarDrive extends Render {
     this.stopBtn = new Render(this.element, 'button', ['stop-btn', 'disabled'], 'Stop');
     this.carImg = new Render(this.element, 'picture', ['car-img'], '');
     this.finishImg = new Render(this.element, 'img', ['finish-img'], '');
-    this.finishImg.element.setAttribute('src', '../../../../../finish.png');
+    this.finishImg.element.setAttribute('src', './finish.png');
 
     this.carImg.element.innerHTML = `<svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="80px" height="45px" viewBox="30 0 260.018 217.017">
        <path fill="${carColor}" d="M317.833,197.111c3.346-11.148,2.455-20.541-2.65-27.945c-9.715-14.064-31.308-15.864-35.43-16.076l-8.077-4.352
