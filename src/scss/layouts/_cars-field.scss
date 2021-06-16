@@ -1,0 +1,67 @@
+.field__title {
+  letter-spacing: 0.1rem;
+  margin-bottom: 10px;
+}
+
+.field__page {
+  @include font($size: 1.8rem, $weight: 500, $height: 3rem);
+  margin-bottom: 20px;
+}
+
+.field__car {
+  position: relative;
+  margin-bottom: 20px;
+  border-bottom: 2px solid $color-light;
+}
+
+.field__car {
+  button {
+    margin-right: 10px;
+    padding: 0 10px;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    background-color: aqua;
+    cursor: pointer;
+    border-radius: 3px;
+    @extend %transition;
+    &:hover {
+      background-color: $color-btn-hover;
+    }
+  }
+
+  .car-img {
+    position: relative;
+  }
+
+  .finish-img {
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    right: 100px;
+    bottom: 0;
+  }
+
+  .stop-btn {
+    background-color: #ff5656;
+    color: rgba(0, 0, 0, 0.7);
+    &:hover {
+      background-color: #fb3333;
+    }
+  }
+
+  .start-btn {
+    background-color: #4df385;
+    color: rgba(0, 0, 0, 0.7);
+    &:hover {
+      background-color: #00d346;
+    }
+  }
+}
+
+.car-drive {
+  display: flex;
+  align-items: center;
+  picture {
+    line-height: 0;
+  }
+}

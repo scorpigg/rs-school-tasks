@@ -1,0 +1,44 @@
+html {
+    font-size: 10px;
+    box-sizing: border-box;
+}
+  
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    @extend %font-add;
+    font-style: normal;
+    @include font();
+    color: #fff;
+    background-color: $color-bg;
+}
+
+a {
+    text-decoration: none;
+    color: $color-black;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.disabled {
+    opacity: .5;
+    pointer-events: none;
+}

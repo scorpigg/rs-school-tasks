@@ -1,0 +1,18 @@
+.switcher {
+  display: flex;
+  justify-content: space-between;
+  width: 320px;
+  padding: 20px;
+
+  button {
+    @include font($size: 1.5rem, $weight: 500, $height: 2.7rem);
+    text-transform: uppercase;
+    padding: 0 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    @extend %transition;
+    &:hover {
+      background-color: $color-btn-hover;
+    }
+  }
+}

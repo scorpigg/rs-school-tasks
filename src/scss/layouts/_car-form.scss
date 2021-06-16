@@ -1,0 +1,63 @@
+.garage {
+  padding-left: 10px;
+}
+
+.car-form {
+  display: grid;
+  grid-row-gap: 10px;
+  width: 550px;
+  padding-top: 20px;
+  margin-bottom: 50px;
+}
+
+.form-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+
+  input,
+  button {
+    padding: 3px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 5px;
+    @extend %transition;
+  }
+  button,
+  input[type="color"] {
+    cursor: pointer;
+  }
+  button {
+    &:hover {
+      background-color: $color-btn-hover;
+    }
+  }
+  input {
+    text-align: center;
+    text-transform: none;
+    &:focus {
+      outline: none;
+      background-color: $color-btn-hover;
+    }
+  }
+  input[type="color"] {
+    padding: 0;
+    width: 100%;
+    &:focus {
+      background-color: #fff;
+    }
+  }
+}
+
+.car-update__color,
+.car-create__color {
+  height: 100%;
+}
+
+.race {
+  background-color: #82ec51;
+}
+
+.reset[disabled="disabled"] {
+  pointer-events:none;
+}
