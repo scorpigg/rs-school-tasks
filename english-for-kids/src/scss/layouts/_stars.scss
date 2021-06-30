@@ -5,6 +5,7 @@
   background-image: url(../../public/img/star-win.svg);
   background-size: contain;
   pointer-events: none;
+  flex-shrink: 0;
 }
 
 .star_incorrect {
