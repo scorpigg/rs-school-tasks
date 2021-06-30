@@ -107,7 +107,7 @@ const chooseCard = async (audioSrc: string, audio: HTMLMediaElement): Promise<st
 export const startGame = (page: number): void => {
   const startGameBtn = document.querySelector('.start-game-btn');
   const audio = document.querySelector('.audio') as HTMLMediaElement;
-  const audiosArr: string[] = getAudios(page).splice(5);
+  const audiosArr: string[] = getAudios(page);
   const cardsField = document.querySelector('.cards') as HTMLElement;
   let correctAnswers = 0;
   let incorrectAnswers = 0;
