@@ -1,0 +1,30 @@
+.start-game-btn {
+  width: 500px;
+  height: 70px;
+  color: $color-light;
+  @include font($size: 2rem, $weight: 500, $height: 2.7rem);
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+  @extend %background-train;
+  border-radius: 10px;
+  border: none;
+  margin: 0 100px;
+  margin-top: 30px;
+  cursor: pointer;
+  @extend %transition;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, .5);
+  
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.repeat-btn {
+  width: 80px;
+  height: 80px;
+  font-size: 0;
+  margin: 0 200px;
+  margin-top: 30px;
+  background: #92d859 url(../../public/img/repeat.svg) no-repeat center;
+  border-radius: 50%;
+}

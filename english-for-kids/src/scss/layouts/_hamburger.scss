@@ -1,0 +1,44 @@
+.hamburger {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 40px;
+  height: 30px;
+  @extend %transition;
+  z-index: 2;
+  
+  input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+  }
+  &_rotate {
+    transform: rotate(-90deg);
+  }
+}
+
+.hamburger__line {
+  width: 100%;
+  height: 4px;
+  display: block;
+  background-color: $color-hamburger;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    background-color: $color-hamburger;
+    width: 100%;
+    height: 4px;
+  }
+
+  &::before {
+    top: 0;
+  }
+
+  &::after {
+    bottom: 0;
+  }
+}

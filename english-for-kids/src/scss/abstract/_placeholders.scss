@@ -1,0 +1,23 @@
+%transition {
+    transition: all 0.2s linear;
+}
+
+%background-train {
+    background: linear-gradient(40deg,#92d859,#3e91d4);
+}
+
+%background-play {
+    background: linear-gradient(40deg,#d38e7c, #133453);
+}
+
+%main-card-background-train {
+    background: linear-gradient(180deg,#bddaa6,#3e91d4 50%,#fff 0,#fff);
+}
+
+%main-card-background-play {
+    background: linear-gradient(180deg,#d38e7c, #133453 50%,#fff 0,#fff);
+}
+
+%font-add {
+    font-family: 'Roboto', 'Arial', sans-serif;
+}

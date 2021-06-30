@@ -1,0 +1,30 @@
+.navigation__list {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -360px;
+  display: flex;
+  flex-direction: column;
+  @extend %background-train;
+  padding-top: 120px;
+  z-index: 1;
+  @extend %transition;
+
+  &_play {
+    @extend %background-play;
+  }
+}
+
+.navigation__item {
+  font-size: 2.2rem;
+  color: $color-light;
+  padding: 10px 110px 10px;
+
+  &_active {
+    text-decoration: underline;
+  }
+}
+
+.show-navigation {
+  left: 0;
+}

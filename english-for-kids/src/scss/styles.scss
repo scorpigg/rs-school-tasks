@@ -1,0 +1,26 @@
+@import "base/normalize";
+
+//Abstract
+
+@import "abstract/constants";
+@import "abstract/mixins";
+@import "abstract/placeholders";
+
+// Base
+
+@import "base/base";
+
+// Components
+
+// Layouts
+@import "layouts/game";
+@import "layouts/header";
+@import "layouts/navigation";
+@import "layouts/hamburger";
+@import "layouts/game-switcher";
+@import "layouts/main-cards";
+@import "layouts/cards";
+@import "layouts/start-game-btn";
+@import "layouts/current-rating";
+@import "layouts/stars";
+@import "layouts/game-result";

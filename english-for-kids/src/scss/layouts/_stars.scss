@@ -1,0 +1,13 @@
+.star_correct,
+.star_incorrect {
+  height: 50px;
+  width: 50px;
+  background-image: url(../../public/img/star-win.svg);
+  background-size: contain;
+  pointer-events: none;
+}
+
+.star_incorrect {
+  pointer-events: painted;
+  background-image: url(../../public/img/star.svg);
+}
