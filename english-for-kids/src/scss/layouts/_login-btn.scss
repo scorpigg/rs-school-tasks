@@ -1,0 +1,17 @@
+.login-btn {
+  margin-top: auto;
+  text-transform: uppercase;
+  height: 60px;
+  width: 200px;
+  background: transparent;
+  border: 2px solid white;
+  border-radius: .5rem;
+  color: white;
+  font-size: 22px;
+  letter-spacing: .6rem;
+  cursor: pointer;
+
+  &:hover {
+    opacity: .8;
+  }
+}

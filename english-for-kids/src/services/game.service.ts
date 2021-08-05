@@ -1,20 +1,23 @@
+/* eslint-disable no-alert */
 /* eslint-disable @typescript-eslint/no-use-before-define */
 import { StarIncorrect } from '../components/game/cards/current-rating/stars/star-incorrect';
 import { StarCorrect } from '../components/game/cards/current-rating/stars/star-correct';
-import { cards, categories } from '../../public/cards';
-import { MainCard } from '../components/game/cards/card.ts/main-card';
-import { Card } from '../components/game/cards/card.ts/card';
+import { MainCard } from '../components/game/cards/card/main-card';
+import { Card } from '../components/game/cards/card/card';
 import { state } from '../components/game/state';
 import { StartGameBtn } from '../components/game/cards/start-btn/start-btn';
 import { CurrentRating } from '../components/game/cards/current-rating/current-rating';
 import { GameWin } from '../components/game/cards/game-result/game-win';
 import { GameLose } from '../components/game/cards/game-result/game-lose';
+import { getCategories, loginUser } from '../api';
+import { getCards } from '../../server/src/cards/controller';
 
 const FIRST_CARD = 0;
 const END_GAME_DELAY = 3000;
 
-const cardsHandle = (cardPage: number): void => {
+const cardsHandle = async (cardPage: number): Promise<void> => {
   const cardsList = document.querySelectorAll('.card-container');
+  const cards = await getCards();
 
   cardsList.forEach((card, index) => {
     card.addEventListener('click', (e) => {
@@ -66,8 +69,10 @@ const changeGameMode = () => {
   });
 };
 
-const getAudios = (page: number): string[] => {
+const getAudios = async (page: number): Promise<string[]> => {
   const randomSuffleAudios: string[] = [];
+  const cards = await getCards();
+
   cards[page].forEach((card) => {
     randomSuffleAudios.push(card.audioSrc);
   });
@@ -104,10 +109,10 @@ const chooseCard = async (audioSrc: string, audio: HTMLMediaElement): Promise<st
   }
 });
 
-export const startGame = (page: number): void => {
+export const startGame = async (page: number): Promise<void> => {
   const startGameBtn = document.querySelector('.start-game-btn');
   const audio = document.querySelector('.audio') as HTMLMediaElement;
-  const audiosArr: string[] = getAudios(page);
+  const audiosArr: string[] = await getAudios(page);
   const cardsField = document.querySelector('.cards') as HTMLElement;
   let correctAnswers = 0;
   let incorrectAnswers = 0;
@@ -156,8 +161,9 @@ export const startGame = (page: number): void => {
   });
 };
 
-const renderCards = (): void => {
+const renderCards = async (): Promise<void> => {
   const cardsField = document.querySelector('.cards') as HTMLElement;
+  const cards = await getCards();
 
   cardsField.innerHTML = '';
   new CurrentRating(cardsField);
@@ -192,13 +198,34 @@ const chooseMainCard = (): void => {
   });
 };
 
-export const renderMainCards = (): void => {
+export const login = (): void => {
+  const authForm = document.querySelector('.auth-form') as HTMLInputElement;
+  const userLogin = document.querySelector('.auth__login') as HTMLInputElement;
+  const userPassword = document.querySelector('.auth__password') as HTMLInputElement;
+  const overlay = document.querySelector('.modal-overlay') as HTMLElement;
+  authForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    await loginUser(userLogin.value, userPassword.value)
+      .then((res) => {
+        localStorage.setItem('jwt', res.accessToken);
+        authForm.classList.add('hidden');
+        overlay.classList.add('hidden');
+      })
+      .catch(() => {
+        alert('Incorrect username or password');
+      });
+  });
+};
+
+export const renderMainCards = async (): Promise<void> => {
   const cardsField = document.querySelector('.cards') as HTMLElement;
 
   cardsField.innerHTML = '';
-  categories.forEach((category, index) => {
+  const categories = await getCategories();
+  const cards = await getCards();
+  categories.forEach((category: { id: number, name: string }, index) => {
     const cardImg = cards[index][FIRST_CARD].image;
-    new MainCard(cardsField, category, cardImg);
+    new MainCard(cardsField, category.name, cardImg);
   });
   chooseMainCard();
   changeGameMode();

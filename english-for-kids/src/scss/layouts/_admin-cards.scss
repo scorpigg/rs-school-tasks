@@ -1,0 +1,127 @@
+.categories-cards {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.category__card {
+  position: relative;
+  height: 250px;
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include font($size: 2.2rem, $weight: 500, $height: 2.7rem);
+  color: $color-black;
+  border: 3px solid #ccc;
+  padding: 25px 20px;
+  border-radius: 5px;
+  margin: 20px;
+}
+
+.category__creat {
+  order: 100;
+}
+
+.category__name {
+  margin-bottom: 50px;
+}
+
+.category__cards {
+  text-transform: uppercase;
+}
+
+.category__btns-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+}
+
+.category__btn {
+  background-color: transparent;
+  color: $color-admin;
+  border: 2px solid $color-admin;
+  padding: 3px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-admin;
+    color: $color-light;
+  }
+}
+
+.delete-category {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  top: 10px;
+  right: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-admin;
+  }
+
+  &:hover.delete-category::before,
+  &:hover.delete-category::after {
+    background-color: $color-light;
+  }
+
+  &::after, 
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    content: '';
+    height: 3px;
+    width: 25px;
+    background-color: $color-admin;
+  }
+
+  &::before {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+}
+
+.creat-card-btn {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 3px solid $color-admin;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-admin;
+  }
+
+  &:hover.creat-card-btn::before,
+  &:hover.creat-card-btn::after {
+    background-color: $color-light;
+  }
+
+  &::after, 
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: '';
+    height: 6px;
+    width: 60px;
+    background-color: $color-admin;
+  }
+
+  &::before {
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+}

@@ -1,8 +1,6 @@
-import { ICards } from '../src/entities/cards.interface';
+import { ICard } from './card.interface';
 
-export const categories: string[] = ['Action (set A)', 'Action (set B)', 'Animal (set A)', 'Animal (set B)', 'Clothes', 'Emotions', 'Vegetables', 'Fruits'];
-
-export const cards: [...ICards[][]] = [
+export const cards: [...ICard[][]] = [
   [
     {
       word: 'cry',
@@ -10,6 +8,7 @@ export const cards: [...ICards[][]] = [
       image: 'img/cry.jpg',
       audioSrc: 'audio/cry.mp3',
       categoryId: 1,
+      categoryName: 'Action (set A)',
     },
     {
       word: 'dance',
@@ -17,6 +16,7 @@ export const cards: [...ICards[][]] = [
       image: 'img/dance.jpg',
       audioSrc: 'audio/dance.mp3',
       categoryId: 1,
+      categoryName: 'Action (set A)',
     },
     {
       word: 'dive',
@@ -24,6 +24,7 @@ export const cards: [...ICards[][]] = [
       image: 'img/dive.jpg',
       audioSrc: 'audio/dive.mp3',
       categoryId: 1,
+      categoryName: 'Action (set A)',
     },
     {
       word: 'draw',
@@ -31,6 +32,7 @@ export const cards: [...ICards[][]] = [
       image: 'img/draw.jpg',
       audioSrc: 'audio/draw.mp3',
       categoryId: 1,
+      categoryName: 'Action (set A)',
     },
     {
       word: 'fish',
@@ -38,6 +40,7 @@ export const cards: [...ICards[][]] = [
       image: 'img/fish.jpg',
       audioSrc: 'audio/fish.mp3',
       categoryId: 1,
+      categoryName: 'Action (set A)',
     },
     {
       word: 'fly',
@@ -45,6 +48,7 @@ export const cards: [...ICards[][]] = [
       image: 'img/fly.jpg',
       audioSrc: 'audio/fly.mp3',
       categoryId: 1,
+      categoryName: 'Action (set A)',
     },
     {
       word: 'hug',
@@ -52,6 +56,7 @@ export const cards: [...ICards[][]] = [
       image: 'img/hug.jpg',
       audioSrc: 'audio/hug.mp3',
       categoryId: 1,
+      categoryName: 'Action (set A)',
     },
     {
       word: 'jump',
@@ -59,6 +64,7 @@ export const cards: [...ICards[][]] = [
       image: 'img/jump.jpg',
       audioSrc: 'audio/jump.mp3',
       categoryId: 1,
+      categoryName: 'Action (set A)',
     },
   ],
   [
@@ -68,6 +74,7 @@ export const cards: [...ICards[][]] = [
       image: 'img/open.jpg',
       audioSrc: 'audio/open.mp3',
       categoryId: 2,
+      categoryName: 'Action (set B)',
     },
     {
       word: 'play',
@@ -75,6 +82,7 @@ export const cards: [...ICards[][]] = [
       image: 'img/play.jpg',
       audioSrc: 'audio/play.mp3',
       categoryId: 2,
+      categoryName: 'Action (set B)',
     },
     {
       word: 'point',
@@ -82,6 +90,7 @@ export const cards: [...ICards[][]] = [
       image: 'img/point.jpg',
       audioSrc: 'audio/point.mp3',
       categoryId: 2,
+      categoryName: 'Action (set B)',
     },
     {
       word: 'ride',
@@ -89,6 +98,7 @@ export const cards: [...ICards[][]] = [
       image: 'img/ride.jpg',
       audioSrc: 'audio/ride.mp3',
       categoryId: 2,
+      categoryName: 'Action (set B)',
     },
     {
       word: 'run',
@@ -96,6 +106,7 @@ export const cards: [...ICards[][]] = [
       image: 'img/run.jpg',
       audioSrc: 'audio/run.mp3',
       categoryId: 2,
+      categoryName: 'Action (set B)',
     },
     {
       word: 'sing',
@@ -103,6 +114,7 @@ export const cards: [...ICards[][]] = [
       image: 'img/sing.jpg',
       audioSrc: 'audio/sing.mp3',
       categoryId: 2,
+      categoryName: 'Action (set B)',
     },
     {
       word: 'skip',
@@ -110,6 +122,7 @@ export const cards: [...ICards[][]] = [
       image: 'img/skip.jpg',
       audioSrc: 'audio/skip.mp3',
       categoryId: 2,
+      categoryName: 'Action (set B)',
     },
     {
       word: 'swim',
@@ -117,6 +130,7 @@ export const cards: [...ICards[][]] = [
       image: 'img/swim.jpg',
       audioSrc: 'audio/swim.mp3',
       categoryId: 2,
+      categoryName: 'Action (set B)',
     },
   ],
   [
@@ -126,6 +140,7 @@ export const cards: [...ICards[][]] = [
       image: 'img/cat.jpg',
       audioSrc: 'audio/cat.mp3',
       categoryId: 3,
+      categoryName: 'Animal (set A)',
     },
     {
       word: 'chick',
@@ -133,6 +148,7 @@ export const cards: [...ICards[][]] = [
       image: 'img/chick.jpg',
       audioSrc: 'audio/chick.mp3',
       categoryId: 3,
+      categoryName: 'Animal (set A)',
     },
     {
       word: 'chicken',
@@ -140,6 +156,7 @@ export const cards: [...ICards[][]] = [
       image: 'img/chicken.jpg',
       audioSrc: 'audio/chicken.mp3',
       categoryId: 3,
+      categoryName: 'Animal (set A)',
     },
     {
       word: 'dog',
@@ -147,6 +164,7 @@ export const cards: [...ICards[][]] = [
       image: 'img/dog.jpg',
       audioSrc: 'audio/dog.mp3',
       categoryId: 3,
+      categoryName: 'Animal (set A)',
     },
     {
       word: 'horse',
@@ -154,6 +172,7 @@ export const cards: [...ICards[][]] = [
       image: 'img/horse.jpg',
       audioSrc: 'audio/horse.mp3',
       categoryId: 3,
+      categoryName: 'Animal (set A)',
     },
     {
       word: 'pig',
@@ -161,6 +180,7 @@ export const cards: [...ICards[][]] = [
       image: 'img/pig.jpg',
       audioSrc: 'audio/pig.mp3',
       categoryId: 3,
+      categoryName: 'Animal (set A)',
     },
     {
       word: 'rabbit',
@@ -168,6 +188,7 @@ export const cards: [...ICards[][]] = [
       image: 'img/rabbit.jpg',
       audioSrc: 'audio/rabbit.mp3',
       categoryId: 3,
+      categoryName: 'Animal (set A)',
     },
     {
       word: 'sheep',
@@ -175,6 +196,7 @@ export const cards: [...ICards[][]] = [
       image: 'img/sheep.jpg',
       audioSrc: 'audio/sheep.mp3',
       categoryId: 3,
+      categoryName: 'Animal (set A)',
     },
   ],
   [
@@ -184,6 +206,7 @@ export const cards: [...ICards[][]] = [
       image: 'img/bird.jpg',
       audioSrc: 'audio/bird.mp3',
       categoryId: 4,
+      categoryName: 'Animal (set B)',
     },
     {
       word: 'fish',
@@ -191,6 +214,7 @@ export const cards: [...ICards[][]] = [
       image: 'img/fish1.jpg',
       audioSrc: 'audio/fish.mp3',
       categoryId: 4,
+      categoryName: 'Animal (set B)',
     },
     {
       word: 'frog',
@@ -198,6 +222,7 @@ export const cards: [...ICards[][]] = [
       image: 'img/frog.jpg',
       audioSrc: 'audio/frog.mp3',
       categoryId: 4,
+      categoryName: 'Animal (set B)',
     },
     {
       word: 'giraffe',
@@ -205,6 +230,7 @@ export const cards: [...ICards[][]] = [
       image: 'img/giraffe.jpg',
       audioSrc: 'audio/giraffe.mp3',
       categoryId: 4,
+      categoryName: 'Animal (set B)',
     },
     {
       word: 'lion',
@@ -212,6 +238,7 @@ export const cards: [...ICards[][]] = [
       image: 'img/lion.jpg',
       audioSrc: 'audio/lion.mp3',
       categoryId: 4,
+      categoryName: 'Animal (set B)',
     },
     {
       word: 'mouse',
@@ -219,6 +246,7 @@ export const cards: [...ICards[][]] = [
       image: 'img/mouse.jpg',
       audioSrc: 'audio/mouse.mp3',
       categoryId: 4,
+      categoryName: 'Animal (set B)',
     },
     {
       word: 'turtle',
@@ -226,6 +254,7 @@ export const cards: [...ICards[][]] = [
       image: 'img/turtle.jpg',
       audioSrc: 'audio/turtle.mp3',
       categoryId: 4,
+      categoryName: 'Animal (set B)',
     },
     {
       word: 'dolphin',
@@ -233,6 +262,7 @@ export const cards: [...ICards[][]] = [
       image: 'img/dolphin.jpg',
       audioSrc: 'audio/dolphin.mp3',
       categoryId: 4,
+      categoryName: 'Animal (set B)',
     },
   ],
   [
@@ -242,6 +272,7 @@ export const cards: [...ICards[][]] = [
       image: 'img/skirt.jpg',
       audioSrc: 'audio/skirt.mp3',
       categoryId: 5,
+      categoryName: 'Clothes',
     },
     {
       word: 'pants',
@@ -249,6 +280,7 @@ export const cards: [...ICards[][]] = [
       image: 'img/pants.jpg',
       audioSrc: 'audio/pants.mp3',
       categoryId: 5,
+      categoryName: 'Clothes',
     },
     {
       word: 'blouse',
@@ -256,6 +288,7 @@ export const cards: [...ICards[][]] = [
       image: 'img/blouse.jpg',
       audioSrc: 'audio/blouse.mp3',
       categoryId: 5,
+      categoryName: 'Clothes',
     },
     {
       word: 'dress',
@@ -263,6 +296,7 @@ export const cards: [...ICards[][]] = [
       image: 'img/dress.jpg',
       audioSrc: 'audio/dress.mp3',
       categoryId: 5,
+      categoryName: 'Clothes',
     },
     {
       word: 'boot',
@@ -270,6 +304,7 @@ export const cards: [...ICards[][]] = [
       image: 'img/boot.jpg',
       audioSrc: 'audio/boot.mp3',
       categoryId: 5,
+      categoryName: 'Clothes',
     },
     {
       word: 'shirt',
@@ -277,6 +312,7 @@ export const cards: [...ICards[][]] = [
       image: 'img/shirt.jpg',
       audioSrc: 'audio/shirt.mp3',
       categoryId: 5,
+      categoryName: 'Clothes',
     },
     {
       word: 'coat',
@@ -284,6 +320,7 @@ export const cards: [...ICards[][]] = [
       image: 'img/coat.jpg',
       audioSrc: 'audio/coat.mp3',
       categoryId: 5,
+      categoryName: 'Clothes',
     },
     {
       word: 'shoe',
@@ -291,6 +328,7 @@ export const cards: [...ICards[][]] = [
       image: 'img/shoe.jpg',
       audioSrc: 'audio/shoe.mp3',
       categoryId: 5,
+      categoryName: 'Clothes',
     },
   ],
   [
@@ -300,6 +338,7 @@ export const cards: [...ICards[][]] = [
       image: 'img/sad.jpg',
       audioSrc: 'audio/sad.mp3',
       categoryId: 6,
+      categoryName: 'Emotions',
     },
     {
       word: 'angry',
@@ -307,6 +346,7 @@ export const cards: [...ICards[][]] = [
       image: 'img/angry.jpg',
       audioSrc: 'audio/angry.mp3',
       categoryId: 6,
+      categoryName: 'Emotions',
     },
     {
       word: 'happy',
@@ -314,6 +354,7 @@ export const cards: [...ICards[][]] = [
       image: 'img/happy.jpg',
       audioSrc: 'audio/happy.mp3',
       categoryId: 6,
+      categoryName: 'Emotions',
     },
     {
       word: 'tired',
@@ -321,6 +362,7 @@ export const cards: [...ICards[][]] = [
       image: 'img/tired.jpg',
       audioSrc: 'audio/tired.mp3',
       categoryId: 6,
+      categoryName: 'Emotions',
     },
     {
       word: 'surprised',
@@ -328,6 +370,7 @@ export const cards: [...ICards[][]] = [
       image: 'img/surprised.jpg',
       audioSrc: 'audio/surprised.mp3',
       categoryId: 6,
+      categoryName: 'Emotions',
     },
     {
       word: 'scared',
@@ -335,6 +378,7 @@ export const cards: [...ICards[][]] = [
       image: 'img/scared.jpg',
       audioSrc: 'audio/scared.mp3',
       categoryId: 6,
+      categoryName: 'Emotions',
     },
     {
       word: 'smile',
@@ -342,6 +386,7 @@ export const cards: [...ICards[][]] = [
       image: 'img/smile.jpg',
       audioSrc: 'audio/smile.mp3',
       categoryId: 6,
+      categoryName: 'Emotions',
     },
     {
       word: 'laugh',
@@ -349,6 +394,7 @@ export const cards: [...ICards[][]] = [
       image: 'img/laugh.jpg',
       audioSrc: 'audio/laugh.mp3',
       categoryId: 6,
+      categoryName: 'Emotions',
     },
   ],
   [
@@ -358,6 +404,7 @@ export const cards: [...ICards[][]] = [
       image: 'img/beet.jpg',
       audioSrc: 'audio/beet.mp3',
       categoryId: 7,
+      categoryName: 'Vegetables',
     },
     {
       word: 'cabbage',
@@ -365,6 +412,7 @@ export const cards: [...ICards[][]] = [
       image: 'img/cabbage.jpg',
       audioSrc: 'audio/cabbage.mp3',
       categoryId: 7,
+      categoryName: 'Vegetables',
     },
     {
       word: 'carrot',
@@ -372,6 +420,7 @@ export const cards: [...ICards[][]] = [
       image: 'img/carrot.jpg',
       audioSrc: 'audio/carrot.mp3',
       categoryId: 7,
+      categoryName: 'Vegetables',
     },
     {
       word: 'cucumber',
@@ -379,6 +428,7 @@ export const cards: [...ICards[][]] = [
       image: 'img/cucumber.jpg',
       audioSrc: 'audio/cucumber.mp3',
       categoryId: 7,
+      categoryName: 'Vegetables',
     },
     {
       word: 'onion',
@@ -386,6 +436,7 @@ export const cards: [...ICards[][]] = [
       image: 'img/onion.jpg',
       audioSrc: 'audio/onion.mp3',
       categoryId: 7,
+      categoryName: 'Vegetables',
     },
     {
       word: 'pepper',
@@ -393,6 +444,7 @@ export const cards: [...ICards[][]] = [
       image: 'img/pepper.jpg',
       audioSrc: 'audio/pepper.mp3',
       categoryId: 7,
+      categoryName: 'Vegetables',
     },
     {
       word: 'potatoes',
@@ -400,6 +452,7 @@ export const cards: [...ICards[][]] = [
       image: 'img/potatoes.jpg',
       audioSrc: 'audio/potatoes.mp3',
       categoryId: 7,
+      categoryName: 'Vegetables',
     },
     {
       word: 'tomato',
@@ -407,6 +460,7 @@ export const cards: [...ICards[][]] = [
       image: 'img/tomato.jpg',
       audioSrc: 'audio/tomato.mp3',
       categoryId: 7,
+      categoryName: 'Vegetables',
     },
   ],
   [
@@ -416,6 +470,7 @@ export const cards: [...ICards[][]] = [
       image: 'img/apple.jpg',
       audioSrc: 'audio/apple.mp3',
       categoryId: 8,
+      categoryName: 'Fruits',
     },
     {
       word: 'banana',
@@ -423,6 +478,7 @@ export const cards: [...ICards[][]] = [
       image: 'img/banana.jpg',
       audioSrc: 'audio/banana.mp3',
       categoryId: 8,
+      categoryName: 'Fruits',
     },
     {
       word: 'grapes',
@@ -430,6 +486,7 @@ export const cards: [...ICards[][]] = [
       image: 'img/grapes.jpg',
       audioSrc: 'audio/grapes.mp3',
       categoryId: 8,
+      categoryName: 'Fruits',
     },
     {
       word: 'lemon',
@@ -437,6 +494,7 @@ export const cards: [...ICards[][]] = [
       image: 'img/lemon.jpg',
       audioSrc: 'audio/lemon.mp3',
       categoryId: 8,
+      categoryName: 'Fruits',
     },
     {
       word: 'melon',
@@ -444,6 +502,7 @@ export const cards: [...ICards[][]] = [
       image: 'img/melon.jpg',
       audioSrc: 'audio/melon.mp3',
       categoryId: 8,
+      categoryName: 'Fruits',
     },
     {
       word: 'orange',
@@ -451,6 +510,7 @@ export const cards: [...ICards[][]] = [
       image: 'img/orange.jpg',
       audioSrc: 'audio/orange.mp3',
       categoryId: 8,
+      categoryName: 'Fruits',
     },
     {
       word: 'peach',
@@ -458,6 +518,7 @@ export const cards: [...ICards[][]] = [
       image: 'img/peach.jpg',
       audioSrc: 'audio/peach.mp3',
       categoryId: 8,
+      categoryName: 'Fruits',
     },
     {
       word: 'pear',
@@ -465,8 +526,16 @@ export const cards: [...ICards[][]] = [
       image: 'img/pear.jpg',
       audioSrc: 'audio/pear.mp3',
       categoryId: 8,
+      categoryName: 'Fruits',
     },
   ],
 ];
 
-export default cards;
+export function getCards(): Promise<ICard[][]> {
+  return Promise.resolve(cards);
+}
+
+export function getCardsByCategoryId(categoryId: number): Promise<ICard[] | undefined> {
+  const arrCards = cards.flat().filter((card) => card.categoryId === categoryId);
+  return Promise.resolve(arrCards);
+}

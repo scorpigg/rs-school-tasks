@@ -5,8 +5,10 @@
   left: -360px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   @extend %background-train;
   padding-top: 120px;
+  padding-bottom: 20px;
   z-index: 1;
   @extend %transition;
 
